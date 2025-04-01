@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+header img {
+    max-width: 300px;
+    height: auto;
+}
+
+main {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #1d429b;
+}
+
+h2 {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1d429b;
+}
+
+/* Form styles */
+form {
+    padding: 15px;
+}
+
+fieldset legend {
+    margin-bottom: 15px;
+}
+
+/* Square input fields */
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 2px solid #1d429b;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #000;
+    outline: none;
+}
+
+.checkbox-group {
+    display: flex; /* Stack pairs vertically */
+    flex-direction: column; /* Each pair on a new line */
+    gap: 10px; /* Space between pairs */
+    margin: 0;
+    padding: 0;
+}
+
+/* Style each checkbox-label pair as a unit */
+.checkbox-group > * {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Checkbox styling */
+.checkbox-group input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #1d429b;
+    background-color: #fff;
+    border-radius: 0;
+    margin: 0 8px 0 0;
+    position: relative;
+    transition: border-color 0.3s ease;
+    flex-shrink: 0;
+}
+
+/* Custom checkmark */
+.checkbox-group input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #1d429b;
+    transform: translate(-50%, -50%);
+}
+
+/* Focus and hover states */
+.checkbox-group input[type="checkbox"]:focus {
+    border-color: #1d429b;
+    outline: none;
+}
+
+/* Label styling */
+.checkbox-group label {
+    cursor: pointer;
+    margin: 0;
+    display: inline;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1d429b; /* Light blue */
+    margin: 15px 0;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fff; /* Dark blue on hover */
+    color: #12a4c8;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    display: block;
+    padding: 12px;
+    background-color: #12a4c8; /* Light blue */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+ul li a:hover {
+    background-color: #1d429b; /* Dark blue on hover */
+}
+
+.sign-up {
+    background-color: #12a4c8;
+    color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+/* Footer (empty for now) */
+footer {
+    height: 20px;
+}
+
+/* Media query for larger screens */
+@media (min-width: 600px) {
+    body {
+        font-family: "Lato";
+        line-height: 1.6;
+        background-color: #f5f5f5;
+        padding: 20px;
+    }
+
+    header img {
+        max-width: 380px; /* Larger logo on desktop */
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .checkbox-group label {
+        margin-right: 15px;
+    }
+
+    button {
+        font-size: 1.1rem;
+    }
+
+    ul li a {
+        font-size: 1.1rem;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+}
